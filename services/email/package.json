@@ -1,0 +1,21 @@
+{
+  "name": "email-service",
+  "version": "1.0.0",
+  "description": "Email service for handling email operations via Kafka",
+  "license": "MIT",
+  "author": "Harsh Kumar",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "ioredis": "^5.9.2",
+    "kafkajs": "^2.2.4",
+    "nodemailer": "^6.9.7"
+  }
+}

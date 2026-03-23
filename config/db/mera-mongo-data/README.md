@@ -1,0 +1,3 @@
+# This Folder Contains the Neccessary Data Objects Exported from the MongoDb Instance and Needs to be there on the MongoDB instance which is Connected to the App and these objects are Required to function the App
+
+# Specially the Permissions Needs to be there and One User should be there to be with ADMIN Role Either Create by API Calls with this Placeholder Data and Later Delete this Placeholder data or simply make an object with same format as described in USER SERVICE

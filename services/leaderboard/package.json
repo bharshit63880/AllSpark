@@ -1,0 +1,1 @@
+{"name":"leaderboard","version":"1.0.0","description":"Real-time leaderboard service for contests","license":"MIT","type":"module","main":"index.js","scripts":{"dev":"node index.js","test":"echo \"Error: no test specified\" && exit 1"},"dependencies":{"cors":"^2.8.5","dotenv":"^17.2.3","express":"^5.2.1","ioredis":"^5.9.2","kafkajs":"^2.2.4"}}

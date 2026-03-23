@@ -1,0 +1,21 @@
+{
+  "name": "permissions",
+  "version": "1.0.0",
+  "description": "This Handles operations related to Permissions",
+  "license": "MIT",
+  "author": "Harsh Kumar",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "ioredis": "^5.9.2",
+    "kafkajs": "^2.2.4",
+    "mongoose": "^9.1.4"
+  }
+}

@@ -1,0 +1,23 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="favAccent" x1="18" y1="14" x2="105" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1EC8FF"/>
+      <stop offset="0.58" stop-color="#3478FF"/>
+      <stop offset="1" stop-color="#9D29FF"/>
+    </linearGradient>
+    <filter id="favGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+  <rect width="128" height="128" rx="30" fill="#050814"/>
+  <rect x="8" y="8" width="112" height="112" rx="24" fill="url(#favAccent)" fill-opacity="0.08" filter="url(#favGlow)"/>
+  <path d="M41 22C28 22 17 33 17 46V53C17 64 23 74 33 81V98C33 102 37 104 40 102L54 93L68 102C71 104 75 102 75 98V81C85 74 91 64 91 53V46C91 33 80 22 67 22H41Z" fill="none" stroke="url(#favAccent)" stroke-width="3.5"/>
+  <path d="M31 53C40 49 46 47 54 47C62 47 68 49 77 53" stroke="url(#favAccent)" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M38 57C40 71 46 82 54 88C62 82 68 71 70 57" stroke="url(#favAccent)" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M45 59C45 54 49 51 54 51C59 51 63 54 63 59V65C63 68 61 70 58 70H50C47 70 45 68 45 65V59Z" fill="#091327" stroke="url(#favAccent)" stroke-width="2.8"/>
+  <path d="M49 59H52M56 59H59" stroke="url(#favAccent)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M54 70V78" stroke="url(#favAccent)" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M35 79L44 70M73 79L64 70" stroke="url(#favAccent)" stroke-width="2.8" stroke-linecap="round"/>
+  <path d="M37 101H71" stroke="url(#favAccent)" stroke-width="3.4" stroke-linecap="round"/>
+  <text x="22" y="120" fill="url(#favAccent)" font-family="Poppins, Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="3">AS</text>
+</svg>

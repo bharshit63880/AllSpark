@@ -1,0 +1,45 @@
+# Copy this file to `main.conf` before running Docker Compose.
+# Example:
+#   cp main.conf.example main.conf
+# Then update the values below for your local or deployed environment.
+
+# MongoDB
+MONGODB_URI=mongodb://db:27017/allSpark
+
+# Shared service port placeholder
+PORT=
+
+# Internal infra service hosts
+KAFKA_INSTANCE_IP=kafka
+REDIS_URL=redis://redis:6379
+DEFAULT_PARTITIONS_OF_KAFKA_TOPICS=1
+
+# Security
+JSON_WEB_TOKEN_SECRET=REPLACE_WITH_SECURE_VALUE
+
+# Judge0 / code execution engine
+CODE_EXECUTION_ENGINE_API_URL=https://ce.judge0.com
+
+# Frontend runtime URLs
+VITE_WEBSOCKET_URL=ws://localhost:8000
+VITE_API_BASE=http://localhost:8000/api/v1
+
+###################################################
+# Email Service Configuration
+###################################################
+
+# Local dev option:
+# SMTP_HOST=mailhog
+# SMTP_PORT=1025
+# SMTP_USER=
+# SMTP_PASS=
+# SMTP_FROM_EMAIL=noreply@allspark.local
+# SMTP_FROM_NAME=All Spark
+
+# Real SMTP example:
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your-email@example.com
+SMTP_PASS=your-app-password
+SMTP_FROM_EMAIL=your-email@example.com
+SMTP_FROM_NAME=All Spark

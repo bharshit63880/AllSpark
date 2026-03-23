@@ -1,0 +1,46 @@
+<svg width="900" height="220" viewBox="0 0 900 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brandText" x1="120" y1="40" x2="660" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1EB8FF"/>
+      <stop offset="0.52" stop-color="#3478FF"/>
+      <stop offset="1" stop-color="#9D29FF"/>
+    </linearGradient>
+    <linearGradient id="brandAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#44D5FF"/>
+      <stop offset="1" stop-color="#8A37FF"/>
+    </linearGradient>
+    <linearGradient id="brandSince" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#2EE4E4"/>
+      <stop offset="1" stop-color="#63F7B3"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g transform="translate(12 10)">
+    <g filter="url(#softGlow)">
+      <path d="M66 8C40 8 18 31 18 59V70C18 93 31 111 50 121V150C50 157 58 162 64 158L88 142L112 158C118 162 126 157 126 150V121C145 111 158 93 158 70V59C158 31 136 8 110 8H66Z" fill="url(#brandAccent)" fill-opacity="0.12"/>
+    </g>
+    <path d="M61 18C40 18 23 35 23 56V67C23 85 33 101 48 110V140C48 145 54 149 59 146L88 129L117 146C122 149 128 145 128 140V110C143 101 153 85 153 67V56C153 35 136 18 115 18H61Z" fill="rgba(14,25,56,0.28)" stroke="url(#brandAccent)" stroke-width="3"/>
+    <path d="M46 67C61 61 72 58 88 58C104 58 115 61 130 67" stroke="url(#brandAccent)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M57 73C59 95 69 114 88 126C107 114 117 95 119 73" stroke="url(#brandAccent)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M71 78C71 70 77 64 85 64H91C99 64 105 70 105 78V86C105 90 102 93 98 93H78C74 93 71 90 71 86V78Z" fill="#091327" stroke="url(#brandAccent)" stroke-width="3"/>
+    <path d="M79 78H84M92 78H97" stroke="url(#brandAccent)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M88 93V104" stroke="url(#brandAccent)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M62 112L76 98M114 112L100 98" stroke="url(#brandAccent)" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M58 143H118" stroke="url(#brandAccent)" stroke-width="4" stroke-linecap="round"/>
+    <path d="M65 131L58 143L72 143" stroke="url(#brandAccent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M111 131L118 143L104 143" stroke="url(#brandAccent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(190 20)">
+    <text x="0" y="96" fill="url(#brandText)" font-family="Poppins, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="8">ALLSPARK</text>
+    <text x="2" y="142" fill="#A855F7" font-family="Poppins, Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="7">OPEN SOURCE CODING PLATFORM</text>
+    <text x="4" y="184" fill="url(#brandSince)" font-family="Poppins, Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="12">SINCE 2025</text>
+  </g>
+</svg>

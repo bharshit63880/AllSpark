@@ -1,0 +1,20 @@
+{
+  "name": "special-access",
+  "version": "1.0.0",
+  "description": "Special access request microservice for exception-based contest support workflows",
+  "license": "MIT",
+  "author": "AllSpark",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node index.js",
+    "test": "node --test src/v1/accessRules.test.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "ioredis": "^5.9.2",
+    "kafkajs": "^2.2.4",
+    "mongoose": "^9.1.4"
+  }
+}

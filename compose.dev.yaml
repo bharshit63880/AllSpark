@@ -93,9 +93,6 @@ services:
     build:
       context: ./app/ui
       target: ui-dev
-    volumes:
-      - ./app/ui:/usr/local/app
-      - /usr/local/app/node_modules
     ports:
       - 5173:5173
     env_file:
@@ -116,9 +113,6 @@ services:
         condition: service_started
       db:
         condition: service_started
-    volumes:
-      - ./app/api:/usr/local/app
-      - /usr/local/app/node_modules
     ports:
       - 8000:8000
     env_file:
@@ -139,9 +133,6 @@ services:
         condition: service_started
       db:
         condition: service_started
-    volumes:
-      - ./services/auth:/usr/local/app
-      - /usr/local/app/node_modules
     ports:
       - 3100:3100
     env_file:
@@ -162,9 +153,6 @@ services:
         condition: service_started
       db:
         condition: service_started
-    volumes:
-      - ./services/permissions:/usr/local/app
-      - /usr/local/app/node_modules
     ports:
       - 3400:3400
     env_file:
@@ -183,9 +171,6 @@ services:
         condition: service_healthy
       redis:
         condition: service_started
-    volumes:
-      - ./services/email:/usr/local/app
-      - /usr/local/app/node_modules
     ports:
       - 3600:3600
     env_file:
@@ -206,9 +191,6 @@ services:
         condition: service_started
       db:
         condition: service_started
-    volumes:
-      - ./services/users:/usr/local/app
-      - /usr/local/app/node_modules
     ports:
       - 3900:3900
     env_file:
@@ -229,9 +211,6 @@ services:
         condition: service_started
       db:
         condition: service_started
-    volumes:
-      - ./services/problems:/usr/local/app
-      - /usr/local/app/node_modules
     ports:
       - 3500:3500
     env_file:
@@ -252,9 +231,6 @@ services:
         condition: service_started
       db:
         condition: service_started
-    volumes:
-      - ./services/contests:/usr/local/app
-      - /usr/local/app/node_modules
     ports:
       - 3200:3200
     env_file:
@@ -275,9 +251,6 @@ services:
         condition: service_started
       db:
         condition: service_started
-    volumes:
-      - ./services/leaderboard:/usr/local/app
-      - /usr/local/app/node_modules
     ports:
       - 3800:3800
     env_file:
@@ -298,9 +271,6 @@ services:
         condition: service_started
       db:
         condition: service_started
-    volumes:
-      - ./services/submissions:/usr/local/app
-      - /usr/local/app/node_modules
     ports:
       - 3700:3700
     env_file:
@@ -321,9 +291,6 @@ services:
         condition: service_started
       db:
         condition: service_started
-    volumes:
-      - ./services/support-ticket:/usr/local/app
-      - /usr/local/app/node_modules
     ports:
       - 3960:3960
     env_file:
@@ -344,9 +311,6 @@ services:
         condition: service_started
       db:
         condition: service_started
-    volumes:
-      - ./services/special-access:/usr/local/app
-      - /usr/local/app/node_modules
     ports:
       - 3970:3970
     env_file:
@@ -367,9 +331,6 @@ services:
         condition: service_started
       db:
         condition: service_started
-    volumes:
-      - ./services/judge:/usr/local/app
-      - /usr/local/app/node_modules
     ports:
       - 3300:3300
     env_file:
@@ -391,9 +352,6 @@ services:
         condition: service_started
       db:
         condition: service_started
-    volumes:
-      - ./services/admin-service:/usr/local/app
-      - /usr/local/app/node_modules
     ports:
       - 3950:3950
     env_file:

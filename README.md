@@ -11,6 +11,10 @@
 
 It acts as a distributed coding platform with independent microservices handling authentication, user management, submissions, contests, permissions, support flows, and real-time updates. The local development environment is fully containerized using Docker, and includes MailHog for seamless OTP/email testing.
 
+
+> [!CAUTION]
+> ## **Deployment Note: This project is fully functional locally using Docker Compose. Public deployment is currently unavailable because the microservices architecture depends on Kafka and Redis infrastructure, which requires paid hosting beyond my current budget.**
+
 ---
 
 ## ✨ Core Features

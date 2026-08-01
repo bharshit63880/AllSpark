@@ -13,65 +13,62 @@
 
 ### Feature Tour
 
-![AllSpark feature tour](docs/demo/allspark-feature-tour.gif)
+<p align="center"><img src="docs/demo/allspark-feature-tour.gif" width="760" alt="AllSpark feature tour"></p>
 
 ### Home
 
-![AllSpark home page](docs/screenshots/01-homepage.png)
+<p align="center"><img src="docs/screenshots/01-homepage.png" width="760" alt="AllSpark home page"></p>
 
 ### Problem Library
 
-![AllSpark problem library](docs/screenshots/02-problems.png)
+<p align="center"><img src="docs/screenshots/02-problems.png" width="760" alt="AllSpark problem library"></p>
 
 ### Contest Arena
 
-![AllSpark contest arena](docs/screenshots/03-contests.png)
+<p align="center"><img src="docs/screenshots/03-contests.png" width="760" alt="AllSpark contest arena"></p>
 
 <details>
 <summary>More screens</summary>
 
 ### About
 
-![AllSpark about page](docs/screenshots/04-about.png)
+<p align="center"><img src="docs/screenshots/04-about.png" width="760" alt="AllSpark about page"></p>
 
 ### Careers
 
-![AllSpark careers page](docs/screenshots/05-careers.png)
+<p align="center"><img src="docs/screenshots/05-careers.png" width="760" alt="AllSpark careers page"></p>
 
 ### Sign Up
 
-![AllSpark sign-up page](docs/screenshots/06-signup.png)
+<p align="center"><img src="docs/screenshots/06-signup.png" width="760" alt="AllSpark sign-up page"></p>
 
 ### Login
 
-![AllSpark login page](docs/screenshots/07-login.png)
+<p align="center"><img src="docs/screenshots/07-login.png" width="760" alt="AllSpark login page"></p>
 
 ### Coding Workspace
 
-![AllSpark coding workspace](docs/screenshots/11-problem-workspace.png)
+<p align="center"><img src="docs/screenshots/11-problem-workspace.png" width="760" alt="AllSpark coding workspace"></p>
 
 ### Contest Details
 
-![AllSpark contest details](docs/screenshots/12-contest-details.png)
+<p align="center"><img src="docs/screenshots/12-contest-details.png" width="760" alt="AllSpark contest details"></p>
 
 ### Support Center
 
-![AllSpark support center](docs/screenshots/08-support.png)
+<p align="center"><img src="docs/screenshots/08-support.png" width="760" alt="AllSpark support center"></p>
 
 ### Support Ticket Tracking
 
-![AllSpark support ticket tracking](docs/screenshots/13-support-ticket-tracking.png)
+<p align="center"><img src="docs/screenshots/13-support-ticket-tracking.png" width="760" alt="AllSpark support ticket tracking"></p>
 
 ### Admin Control Panel
 
-![AllSpark admin control panel](docs/screenshots/09-admin-control-panel.png)
+<p align="center"><img src="docs/screenshots/09-admin-control-panel.png" width="760" alt="AllSpark admin control panel"></p>
 
 </details>
 
 It acts as a distributed coding platform with independent microservices handling authentication, user management, submissions, contests, permissions, support flows, and real-time updates. The local development environment is fully containerized using Docker, and includes MailHog for seamless OTP/email testing.
-
-> [!CAUTION]
-> ## **Deployment Note: This project is fully functional locally using Docker Compose. Public deployment is currently unavailable because the microservices architecture depends on Kafka and Redis infrastructure, which requires paid hosting beyond my current budget.**
 
 ---
 

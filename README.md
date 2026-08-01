@@ -9,8 +9,66 @@
 
 **AllSpark** is a microservices-based, event-driven coding platform designed for problem-solving, contests, admin management, and support workflows. 
 
-It acts as a distributed coding platform with independent microservices handling authentication, user management, submissions, contests, permissions, support flows, and real-time updates. The local development environment is fully containerized using Docker, and includes MailHog for seamless OTP/email testing.
+## Product Preview
 
+### Feature Tour
+
+![AllSpark feature tour](docs/demo/allspark-feature-tour.gif)
+
+### Home
+
+![AllSpark home page](docs/screenshots/01-homepage.png)
+
+### Problem Library
+
+![AllSpark problem library](docs/screenshots/02-problems.png)
+
+### Contest Arena
+
+![AllSpark contest arena](docs/screenshots/03-contests.png)
+
+<details>
+<summary>More screens</summary>
+
+### About
+
+![AllSpark about page](docs/screenshots/04-about.png)
+
+### Careers
+
+![AllSpark careers page](docs/screenshots/05-careers.png)
+
+### Sign Up
+
+![AllSpark sign-up page](docs/screenshots/06-signup.png)
+
+### Login
+
+![AllSpark login page](docs/screenshots/07-login.png)
+
+### Coding Workspace
+
+![AllSpark coding workspace](docs/screenshots/11-problem-workspace.png)
+
+### Contest Details
+
+![AllSpark contest details](docs/screenshots/12-contest-details.png)
+
+### Support Center
+
+![AllSpark support center](docs/screenshots/08-support.png)
+
+### Support Ticket Tracking
+
+![AllSpark support ticket tracking](docs/screenshots/13-support-ticket-tracking.png)
+
+### Admin Control Panel
+
+![AllSpark admin control panel](docs/screenshots/09-admin-control-panel.png)
+
+</details>
+
+It acts as a distributed coding platform with independent microservices handling authentication, user management, submissions, contests, permissions, support flows, and real-time updates. The local development environment is fully containerized using Docker, and includes MailHog for seamless OTP/email testing.
 
 > [!CAUTION]
 > ## **Deployment Note: This project is fully functional locally using Docker Compose. Public deployment is currently unavailable because the microservices architecture depends on Kafka and Redis infrastructure, which requires paid hosting beyond my current budget.**

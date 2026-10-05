@@ -3,324 +3,233 @@
 [![Docker](https://img.shields.io/badge/Docker-blue?logo=docker&logoColor=white)](https://www.docker.com/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen?logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 [![Redis](https://img.shields.io/badge/Redis-red?logo=redis&logoColor=white)](https://redis.io/)
-[![Kafka](https://img.shields.io/badge/Kafka-black?logo=apachekafka&logoColor=white)](https://kafka.apache.org/)
-[![React (Vite)](https://img.shields.io/badge/Frontend-React_Vite-61DAFB?logo=react&logoColor=white)](https://vitejs.dev/)
+[![Apache Kafka](https://img.shields.io/badge/Kafka-black?logo=apachekafka&logoColor=white)](https://kafka.apache.org/)
+[![React](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB?logo=react&logoColor=white)](https://react.dev/)
 [![Node.js](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js&logoColor=white)](https://nodejs.org/)
 
-**AllSpark** is a microservices-based, event-driven coding platform designed for problem-solving, contests, admin management, and support workflows. 
+> **AllSpark is a distributed, microservices-based coding and evaluation platform built for problem solving, competitive programming, automated code execution, administration, and support workflows.**
 
-## Product Preview
+AllSpark separates major platform responsibilities into independent backend services and uses **Apache Kafka for event-driven communication, Redis for caching and real-time state, MongoDB for persistent data, WebSockets for live updates, and Docker for local infrastructure orchestration.**
+
+---
+
+## 📸 Product Preview
 
 ### Feature Tour
 
-<p align="center"><img src="docs/demo/allspark-feature-tour.gif" width="760" alt="AllSpark feature tour"></p>
+<p align="center">
+  <img src="docs/demo/allspark-feature-tour.gif" width="760" alt="AllSpark feature tour">
+</p>
 
 ### Home
 
-<p align="center"><img src="docs/screenshots/01-homepage.png" width="760" alt="AllSpark home page"></p>
+<p align="center">
+  <img src="docs/screenshots/01-homepage.png" width="760" alt="AllSpark home page">
+</p>
 
 ### Problem Library
 
-<p align="center"><img src="docs/screenshots/02-problems.png" width="760" alt="AllSpark problem library"></p>
+<p align="center">
+  <img src="docs/screenshots/02-problems.png" width="760" alt="AllSpark problem library">
+</p>
 
 ### Contest Arena
 
-<p align="center"><img src="docs/screenshots/03-contests.png" width="760" alt="AllSpark contest arena"></p>
+<p align="center">
+  <img src="docs/screenshots/03-contests.png" width="760" alt="AllSpark contest arena">
+</p>
 
 <details>
-<summary>More screens</summary>
+<summary>More Screens</summary>
 
 ### About
 
-<p align="center"><img src="docs/screenshots/04-about.png" width="760" alt="AllSpark about page"></p>
+<p align="center">
+  <img src="docs/screenshots/04-about.png" width="760" alt="AllSpark about page">
+</p>
 
 ### Careers
 
-<p align="center"><img src="docs/screenshots/05-careers.png" width="760" alt="AllSpark careers page"></p>
+<p align="center">
+  <img src="docs/screenshots/05-careers.png" width="760" alt="AllSpark careers page">
+</p>
 
 ### Sign Up
 
-<p align="center"><img src="docs/screenshots/06-signup.png" width="760" alt="AllSpark sign-up page"></p>
+<p align="center">
+  <img src="docs/screenshots/06-signup.png" width="760" alt="AllSpark sign-up page">
+</p>
 
 ### Login
 
-<p align="center"><img src="docs/screenshots/07-login.png" width="760" alt="AllSpark login page"></p>
+<p align="center">
+  <img src="docs/screenshots/07-login.png" width="760" alt="AllSpark login page">
+</p>
 
 ### Coding Workspace
 
-<p align="center"><img src="docs/screenshots/11-problem-workspace.png" width="760" alt="AllSpark coding workspace"></p>
+<p align="center">
+  <img src="docs/screenshots/11-problem-workspace.png" width="760" alt="AllSpark coding workspace">
+</p>
 
 ### Contest Details
 
-<p align="center"><img src="docs/screenshots/12-contest-details.png" width="760" alt="AllSpark contest details"></p>
+<p align="center">
+  <img src="docs/screenshots/12-contest-details.png" width="760" alt="AllSpark contest details">
+</p>
 
 ### Support Center
 
-<p align="center"><img src="docs/screenshots/08-support.png" width="760" alt="AllSpark support center"></p>
+<p align="center">
+  <img src="docs/screenshots/08-support.png" width="760" alt="AllSpark support center">
+</p>
 
 ### Support Ticket Tracking
 
-<p align="center"><img src="docs/screenshots/13-support-ticket-tracking.png" width="760" alt="AllSpark support ticket tracking"></p>
+<p align="center">
+  <img src="docs/screenshots/13-support-ticket-tracking.png" width="760" alt="AllSpark support ticket tracking">
+</p>
 
 ### Admin Control Panel
 
-<p align="center"><img src="docs/screenshots/09-admin-control-panel.png" width="760" alt="AllSpark admin control panel"></p>
+<p align="center">
+  <img src="docs/screenshots/09-admin-control-panel.png" width="760" alt="AllSpark admin control panel">
+</p>
 
 </details>
 
-It acts as a distributed coding platform with independent microservices handling authentication, user management, submissions, contests, permissions, support flows, and real-time updates. The local development environment is fully containerized using Docker, and includes MailHog for seamless OTP/email testing.
+---
+
+## 🎯 Overview
+
+AllSpark is a distributed coding platform designed to handle the major workflows involved in an online coding and evaluation system.
+
+The platform includes:
+
+- User authentication and account management
+- Email OTP verification
+- Coding problems and submissions
+- Automated code execution
+- Competitive programming contests
+- Live leaderboards
+- Role-based permissions
+- Administrative workflows
+- Support ticket management
+- Real-time application updates
+
+Instead of implementing the entire backend as one application, AllSpark separates major responsibilities into independent services and uses asynchronous events where appropriate.
 
 ---
 
 ## ✨ Core Features
 
-* **User Management:** Secure signup, login, and OTP-based email verification.
-* **Account Recovery:** Complete forgot password / reset password flows.
-* **Coding Engine:** Real-time coding problem execution and submission flow (Judge0-compatible).
-* **Contests:** Competitive programming contest participation and live leaderboard updates.
-* **Admin Controls:** Comprehensive admin control panel for platform management.
-* **Support:** Built-in support ticket workflow and special access/approval flows.
-* **Real-time Architecture:** Event-driven communication powered by Apache Kafka.
+### 👤 Authentication & User Management
+
+- User signup and login
+- OTP-based email verification
+- Forgot password
+- Password reset
+- Account activation/deactivation
+- User management
+- JWT-based authentication
+
+### 💻 Coding & Evaluation
+
+- Problem library
+- Online coding workspace
+- Code execution
+- Submission processing
+- Submission results
+- Judge0-compatible execution integration
+
+### 🏆 Contests
+
+- Contest listing
+- Contest participation
+- Contest submissions
+- Contest problem solving
+- Live leaderboard updates
+
+### ⚡ Real-Time System
+
+- WebSocket-based updates
+- Live leaderboard updates
+- Real-time submission-related updates
+- Event-driven backend communication
+
+### 🔐 Authorization & Admin
+
+- Role-based access control
+- Permission management
+- Admin control panel
+- Protected administrative workflows
+
+### 🎫 Support
+
+- Support ticket creation
+- Ticket tracking
+- Support workflows
+- Special access / approval flows
+
+### 📨 Email & OTP
+
+- OTP-based account verification
+- Password recovery emails
+- MailHog integration for local development
 
 ---
 
-## 🛠️ Architecture & Local Tech Stack
+# 🏗️ Architecture
 
-### Prerequisites
-Before running the project, ensure you have the following installed:
-* [Docker](https://www.docker.com/products/docker-desktop/)
-* [Docker Compose v2](https://docs.docker.com/compose/)
+AllSpark follows a **microservices + event-driven architecture**.
 
-### Local Services Used
-* **Frontend** (React/Vite)
-* **API Gateway** (Node.js)
-* **MongoDB** (Database)
-* **Redis** (Caching)
-* **Kafka** (Message Broker)
-* **MailHog** (Local SMTP Testing)
-* **Execution Engine** (Judge0-compatible API)
+```mermaid
+flowchart TB
 
----
+    Client[React + Vite Frontend]
 
-## 📂 Repository Structure
+    Gateway[API Gateway]
 
-```text
-AllSpark-main/
-├─ app/
-│  ├─ ui/                  # Frontend Application
-│  └─ api/                 # API Gateway
-├─ services/               # Backend Microservices
-├─ config/
-│  └─ db/
-│     └─ seed-production-content.js
-├─ compose.dev.yaml        # Local development stack orchestration
-├─ main.conf.example       # Example environment configuration
-└─ README.md
-🌐 Local Development Environment
-Ports & Services
-Service	Port	Local URL
-Frontend	5173	http://localhost:5173
-API Gateway	8000	http://localhost:8000
-MailHog UI	8025	http://localhost:8025
-Redis Stack UI	8001	http://localhost:8001
-MongoDB	27017	Internal
-Kafka	9092	Internal
-MailHog SMTP	1025	Internal
-🚀 Quick Start
-Clone or extract the project:
+    Auth[Authentication Service]
+    Users[User Management]
+    Permissions[Permission Service]
+    Problems[Problems & Contests]
+    Submissions[Submission Service]
+    Support[Support Service]
 
-Bash
-cd AllSpark-main
-Create your local environment file:
+    Mongo[(MongoDB)]
+    Redis[(Redis)]
+    Kafka[(Apache Kafka)]
+    Judge[Judge0-Compatible Engine]
+    Mail[MailHog / SMTP]
 
-Bash
-cp main.conf.example main.conf
-Update main.conf:
-Open main.conf and configure the required environment variables. For local development, use MailHog instead of real SMTP credentials.
+    Client --> Gateway
 
-Properties
-# MongoDB
-MONGODB_URI=mongodb://db:27017/allSpark
+    Gateway --> Auth
+    Gateway --> Users
+    Gateway --> Permissions
+    Gateway --> Problems
+    Gateway --> Submissions
+    Gateway --> Support
 
-# Shared service port placeholder
-PORT=
+    Auth --> Mongo
+    Users --> Mongo
+    Problems --> Mongo
+    Submissions --> Mongo
+    Support --> Mongo
 
-# Internal infra
-KAFKA_INSTANCE_IP=kafka
-REDIS_URL=redis://redis:6379
-DEFAULT_PARTITIONS_OF_KAFKA_TOPICS=1
+    Auth --> Mail
 
-# Security
-JSON_WEB_TOKEN_SECRET=replace_with_a_random_secret_for_local_dev
+    Submissions --> Judge
 
-# Code execution engine
-CODE_EXECUTION_ENGINE_API_URL=[https://ce.judge0.com](https://ce.judge0.com)
+    Auth <--> Kafka
+    Users <--> Kafka
+    Problems <--> Kafka
+    Submissions <--> Kafka
+    Support <--> Kafka
 
-# Frontend runtime URLs
-VITE_WEBSOCKET_URL=ws://localhost:8000
-VITE_API_BASE=http://localhost:8000/api/v1
+    Submissions --> Redis
+    Problems --> Redis
+    Kafka --> Redis
 
-# MailHog for local OTP/email testing
-SMTP_HOST=mailhog
-SMTP_PORT=1025
-SMTP_USER=
-SMTP_PASS=
-SMTP_FROM_EMAIL=noreply@allspark.local
-SMTP_FROM_NAME=All Spark
-Start the full stack:
-
-Bash
-docker compose -f compose.dev.yaml up --build -d
-Confirm containers are running:
-
-Bash
-docker compose -f compose.dev.yaml ps
-⚙️ First-Time Setup Flow
-On a fresh machine, you must follow this exact order to properly initialize the application, create an admin account, and seed the database.
-
-Step 1: Sign up from the Frontend
-Open http://localhost:5173/signup.
-
-Create an account (use any email you want).
-
-Recommended Example:
-
-Name: Admin User
-
-Username: admin
-
-Email: your-email@example.com
-
-Password: Admin@123 (Must contain 8+ chars, 1 uppercase, 1 lowercase, 1 number, 1 special character)
-
-Mobile: 9999999999
-
-Step 2: Verify the OTP
-Open MailHog at http://localhost:8025.
-
-Copy the OTP from the received email and complete the verification on the frontend.
-
-Step 3: Promote the user to ADMIN
-Open the MongoDB shell inside your Docker container:
-
-Bash
-docker compose -f compose.dev.yaml exec db mongosh allSpark
-Run the following update command:
-
-JavaScript
-db.users.updateOne(
-  { email: "your-email@example.com" },
-  { $set: { role: "ADMIN", activation_status: "active" } }
-)
-Verify the update was successful:
-
-JavaScript
-db.users.findOne(
-  { email: "your-email@example.com" },
-  { email: 1, user_name: 1, role: 1, activation_status: 1 }
-)
-Expected Output:
-
-JSON
-{
-  "email": "your-email@example.com",
-  "user_name": "admin",
-  "role": "ADMIN",
-  "activation_status": "active"
-}
-Type exit to leave the Mongo shell.
-
-Step 4: Logout and Login Again (Crucial)
-⚠️ Why is this required? Even after updating the role in MongoDB, your current JWT token still contains the previous USER role. Without re-logging in, admin APIs will fail with authorization errors.
-
-Logout from the frontend.
-
-Login again with your credentials.
-
-Access the Admin Panel at: http://localhost:5173/admins/control-panel
-
-🌱 Seeding Demo Problems and Contests
-After creating your admin account, populate the database with demo content:
-
-Bash
-docker compose -f compose.dev.yaml cp config/db/seed-production-content.js db:/seed-production-content.js
-docker compose -f compose.dev.yaml exec db mongosh --quiet /seed-production-content.js
-docker compose -f compose.dev.yaml exec redis redis-cli FLUSHALL
-What the seed script does:
-
-Removes old seeded participation data, problems, and contests.
-
-Inserts demo problems and contests.
-
-Automatically detects the admin user to set as the "creator" of the seeded content.
-
-(Optional) You can explicitly choose the seed owner if automatic detection fails:
-
-Bash
-# By Email:
-docker compose -f compose.dev.yaml exec -e SEED_ADMIN_EMAIL=your-email@example.com db mongosh --quiet /seed-production-content.js
-
-# By Username:
-docker compose -f compose.dev.yaml exec -e SEED_ADMIN_USERNAME=admin db mongosh --quiet /seed-production-content.js
-💻 Common Commands
-Action	Command
-Stop Stack	docker compose -f compose.dev.yaml down
-Restart Stack	docker compose -f compose.dev.yaml restart
-Restart Single Service	docker compose -f compose.dev.yaml restart <service-name>
-View Status	docker compose -f compose.dev.yaml ps
-🩺 Troubleshooting
-1. Seed script says admin user not found:
-
-Reason: No admin-like user exists yet.
-
-Fix: Complete the full First-Time Setup flow (Sign up > Verify OTP > Promote in DB > Re-login) before running the seed script.
-
-2. Admin panel shows forbidden / role error:
-
-Reason: Role was updated in DB, but your browser token is stale.
-
-Fix: Logout and log back in.
-
-3. OTP email is not arriving:
-
-Fix: Ensure main.conf is pointing SMTP to mailhog on port 1025, then check the UI at http://localhost:8025.
-
-4. Seed completed but data still looks stale:
-
-Reason: Redis cache needs to be cleared.
-
-Fix: Run docker compose -f compose.dev.yaml exec redis redis-cli FLUSHALL
-
-5. Need to check service logs:
-
-Bash
-docker compose -f compose.dev.yaml logs auth --tail 200
-docker compose -f compose.dev.yaml logs submissions --tail 200
-# Replace 'auth' or 'submissions' with any service name (e.g., users, permissions, api, judge)
-✅ Manual Verification Checklist
-After setting up the project, verify these core flows:
-
-[ ] Signup & Email OTP verification
-
-[ ] Login / Forgot password / Reset password
-
-[ ] Problem run & submission
-
-[ ] Contest listing, participation, and submission
-
-[ ] Leaderboard updates
-
-[ ] Support ticket flow & special access flow
-
-[ ] Admin dashboard access
-
-🔒 Security Notes
-🚨 WARNING: Before deploying this project to production:
-
-Replace JSON_WEB_TOKEN_SECRET with a strong, cryptographic secret.
-
-Configure real, private SMTP credentials.
-
-NEVER commit main.conf, .env files, or any secrets to version control.
-
-Do not expose internal service ports publicly unless absolutely required behind a firewall.
+    Redis --> Client
